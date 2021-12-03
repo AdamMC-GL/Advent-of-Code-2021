@@ -14,3 +14,6 @@ for pos, x in lines:
     depth += aim * x * (pos == "forward")
     aim += x * (pos == "down") or -(x * (pos == "up"))
 print(hor*depth)
+
+# part 1 one-line
+print(sum(x * ("f" in pos) for pos, x in lines) * sum(x * ("n" in pos) or -(x * ("u" in pos)) for pos, x in lines))
