@@ -18,8 +18,13 @@ for i in range(len(lines[0])):
 print(int(ox[0], 2) * int(co[0], 2))
 
 """Explanation:
-ox_ and co_ are sums of the total 1's per column of bytes (top to bottom), 
+Part 1: 
+count is the sum of the total 1's per column of bytes (top to bottom), 
 it is than subtracted with half the length of the column, if there are more 1's than 0's
-the end result should give a number above 0, else below 0. This outcome is then applied in the
-lines below. If the bit is a one and the statement is true (there where more ones), than that
-byte stays in the list."""
+the end result should give a number above 0, else below 0. If its above 0 a '1' is appended
+to gamma, else a 0. The opposite for epsilon.
+
+Part 2:
+ox_ and co_ are same as for count in part 1, but for each respective list of ox (oxygen) and co (CO2). 
+This outcome is then applied in the lines below. If the bit is a one and the statement is true (there where more ones), 
+than that byte stays in the list."""
