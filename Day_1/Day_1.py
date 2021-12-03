@@ -8,5 +8,5 @@ For each 2 consecutive values in 'lines' a 1 is added to a generator if the seco
 this total is summed up and printed.
 
 Part 2:
-The same as part 1 but with comparing the first and fourth value, 
+The same as part 1 but comparing with the first and fourth value, 
 because comparing a+b+c with b+c+d is the same as just comparing a and d directly."""
