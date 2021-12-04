@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <list>
 #include "vector"
 using namespace std;
 
@@ -14,12 +13,8 @@ int main() {
     string gamma;
     string epsilon;
     int count;
-    int int_gamma;
-    int int_epsilon;
 
-    int int_co;
-    int int_ox;
-
+    // part 1
     for (int i = 0; i < 1000; i++) {
         inFileStr >> data;
         lines.push_back(data);
@@ -36,11 +31,11 @@ int main() {
         count = 0;
     }
 
-    int_gamma = stoi(gamma, nullptr, 2);
-    int_epsilon = stoi(epsilon, nullptr, 2);
+    int int_gamma = stoi(gamma, nullptr, 2);
+    int int_epsilon = stoi(epsilon, nullptr, 2);
     cout << int_gamma * int_epsilon << endl;
 
-
+    // part 2
     int co_ = 0;
     int ox_ = 0;
     for (int i = 0; i < 12; i++){
@@ -65,8 +60,8 @@ int main() {
         co_ = 0;
         ox_ = 0;
     }
-    int_co = stoi(co[0], nullptr, 2);
-    int_ox = stoi(ox[0], nullptr, 2);
+    int int_co = stoi(co[0], nullptr, 2);
+    int int_ox = stoi(ox[0], nullptr, 2);
     cout << int_co * int_ox << endl;
     return 0;
 }
