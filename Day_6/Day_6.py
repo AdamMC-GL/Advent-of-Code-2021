@@ -31,7 +31,6 @@ days from now on top of those who where already prone to. The value that is alre
 the newly created fish, since all fish of that day create 1 it is the same value. Newly created fish
 get a timer of 9 days (since 0 is included), that's the length of the list and cycle and therefore are put
 in the same spot by doing nothing.
-
 Index resets every cycle to move back to the first item, and this process is repeated until the input amount
 of days have finished
 """
