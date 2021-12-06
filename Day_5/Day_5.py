@@ -12,20 +12,21 @@ for i in lines:
         for j in range(min(uniques), max(uniques) + 1):
             all_coords[(j, dupe)] = all_coords.get((j, dupe), 0) + 1
 
-print(sum(1 for i in all_coords.values() if i > 1))
+print(sum(i > 1 for i in all_coords.values()))
 
 # Part 2
 for i in lines:
     if i[1] != i[3] and i[0] != i[2]:
-        diff = max(i[0], i[2])+1 - min(i[0], i[2])
         x = list(range(min(i[0], i[2]), max(i[0], i[2]) + 1))
         y = list(range(min(i[1], i[3]), max(i[1], i[3]) + 1))
+        diff = len(x)
         if (i[0] > i[2]) + (i[1] > i[3]) == 1:
             x.reverse()
         for j in range(0, diff):
             all_coords[(x[j], y[j])] = all_coords.get((x[j], y[j]), 0) + 1
 
-print(sum(1 for i in all_coords.values() if i > 1))
+print(sum(i > 1 for i in all_coords.values()))
+
 
 """Explanation:
 Part 1: 
