@@ -33,7 +33,7 @@ This costs a total of 37 fuel. This is the cheapest possible outcome; more expen
 
 Determine the horizontal position that the crabs can align to using the least fuel possible. How much fuel must they spend to align to that position?
 
---- Part Two ---
+# --- Part Two ---
 
 The crabs don't seem interested in your proposed solution. Perhaps you misunderstand crab engineering?
 
