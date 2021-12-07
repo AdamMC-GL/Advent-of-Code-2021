@@ -17,6 +17,3 @@ while new < old or old == 0:
     old = new
     new = sum((abs(n - j) + 1)*(abs(n - j))/2 for j in lines)
 print(n, int(old))
-
-
-
