@@ -5,6 +5,8 @@ def day_6(days):
     ex = [lines.count(i) for i in range(9)]
     for i in range(days):
         ex[(i % 9) - 2] += ex[i % 9]
+        if i % 9 == 0:
+            print(sum(ex))
     print(sum(ex))
 
 
